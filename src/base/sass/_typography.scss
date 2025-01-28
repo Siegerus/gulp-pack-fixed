@@ -1,0 +1,72 @@
+/* Titles
+   ========================================================================= */
+   h1,.h1,
+   h2,.h2,
+   h3,.h3,
+   h4,.h4,
+   h5,.h5,
+   h6 .h6 {
+       margin: 0 0 20px;
+       line-height: 1.2;
+       font-weight: 700;
+   
+       &:not(:first-child) {
+           margin-top: 20px
+       }
+   }
+   
+   /**
+    * Responsive titles
+    */
+   h1,
+   .h1 {
+       @include responsive-tlt(24px, 36px);
+   }
+   
+   /* 36px - 24px */
+   
+   
+   h2, .h2 {
+       @include responsive-tlt(22px, 30px);
+   }
+   
+   /* 30px - 22px */
+   
+   
+   h3, .h3 {
+       @include responsive-tlt(20px, 26px);
+   }
+   
+   /* 26px - 20px */
+   
+   
+   h4, .h4 {
+       @include responsive-tlt(18px, 24px);
+   }
+   
+   /* 24px - 18px */
+   
+   
+   h5, .h5 {
+       @include responsive-tlt(17px, 20px);
+   }
+   
+   /* 20px - 17px */
+   
+   
+   h6, .h6 {
+       @include responsive-tlt(16px, 18px);
+   }
+   
+   /* 18px - 16px */
+   
+   
+   /**
+    * Lists
+    */
+   ul,
+   ol {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
